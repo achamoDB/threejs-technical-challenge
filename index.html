@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!------------------------------------
+RGA Technical Challenge
+Author: Alex Chamo (alex.chamo@gmail.com)
+
+Based on https://threejs.org/examples/webgl_geometry_terrain.html
+-------------------------------------->
+<html lang="en">
+	<head>
+		<title>Technical Challenge ThreeJS - Alex Chamo</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				background-color: #404040;
+				margin: 0px;
+				overflow: hidden;
+			}
+		</style>
+		<script src="js/three.min.js"></script>
+		<script src="js/Detector.js"></script>
+		<script src="js/stats.min.js"></script>
+		<script src="js/ImprovedNoise.js"></script>
+	</head>
+	<body>
+
+		<div id="container"></div>
+
+		<script>
+			if ( ! Detector.webgl ) {
+				Detector.addGetWebGLMessage();
+				document.getElementById( 'container' ).innerHTML = "";
+			}			
+		</script>
+
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
